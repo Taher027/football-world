@@ -83,7 +83,7 @@ body {
 }
 
 @media only screen and (max-width:980px) {
-    
+
     .hero-content-area .hero-title {
         font-size: 50px;
         line-height: 60px;
@@ -152,17 +152,18 @@ main {
     margin-top: 80px;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap:30px ;
+    row-gap: 30px;
     background-color: #000;
     height: 250px;
     padding: 30px;
     border-radius: 5px;
 }
-.menu-item{
+
+.menu-item {
     width: 250px;
     background-color: #fff;
     padding: 5px 10px;
@@ -172,7 +173,7 @@ main {
 }
 
 .menu .menu-item a {
-   
+
     font-size: 20px;
     text-align: center;
     text-decoration: none;
@@ -263,46 +264,82 @@ main {
         display: flex;
         flex-direction: column;
     }
-   .menu{
-    flex-direction: row;
-    column-gap: 20px;
-    height: auto;
-    background-color: #fff;
-    margin-bottom: 30px;
-   }
-   .menu-item{
-    background-color: #fff;
-    width: 230px;
-    padding: 10px 5px;
-    text-align: center;
-    border: 1px solid #DDD;
-    border-radius: 5px;
 
-}
+    .menu {
+        flex-direction: row;
+        column-gap: 20px;
+        height: auto;
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
 
-    .matches{
+    .menu-item {
+        background-color: #fff;
+        width: 230px;
+        padding: 10px 5px;
+        text-align: center;
+        border: 1px solid #DDD;
+        border-radius: 5px;
+
+    }
+
+    .matches {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 15px;
     }
-    
-    
+
+
 
 }
-@media only screen and (max-width:768px){
-    .menu{
+
+@media only screen and (max-width:768px) {
+    .menu {
         flex-direction: column;
         align-items: center;
 
     }
-    .matches{
+
+    .matches {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
 
-
-
-
 /*---------------------- 
     main section responsive end  
    ------------------------*/
+
+
+
+/* tablet -button start */
+.tablet-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    visibility: hidden;
+
+}
+
+.tablet-btn a {
+    text-decoration: none;
+    font-size: 20;
+    text-transform: capitalize;
+    font-weight: 500;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: transform 1.5s ease;
+}
+
+.tablet-btn a:hover {
+    transform: scale(1.3);
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .tablet-btn {
+        visibility: visible;
+    }
+}
+
+/* tablet -button end */
