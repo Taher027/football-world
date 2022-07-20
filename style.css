@@ -72,7 +72,7 @@ body {
 }
 
 /* -------------------
-     responsive hero section 
+     set media query for tab
 ---------------------- */
 @media only screen and (max-width:1100px) {
     .hero-content-area .hero-title {
@@ -106,11 +106,12 @@ body {
         margin-bottom: 20px;
     }
 }
+  /* set media query for mobile  */
 
 @media only screen and (max-width:768px) {
     .hero-container {
         display: flex;
-        row-gap: 100px;
+        row-gap: none;
         flex-direction: column;
         padding: 30px 30px 0px 30px;
     }
