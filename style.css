@@ -198,13 +198,16 @@ main {
 }
 
 .blog {
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0 0 5px 5px ;
 }
 
 .blog-details {
 
     border-top: none;
+    margin-top: 0;
     padding: 30px;
     padding-top: 0;
 }
@@ -296,6 +299,9 @@ main {
 }
 
 @media only screen and (max-width:768px) {
+    .main{
+        column-gap: 0px;
+    }
     .menu {
         flex-direction: column;
         align-items: center;
