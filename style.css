@@ -198,10 +198,7 @@ main {
 }
 
 .blog {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    border-radius: 0 0 5px 5px ;
+    
 }
 
 .blog-details {
@@ -210,11 +207,15 @@ main {
     margin-top: 0;
     padding: 30px;
     padding-top: 0;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px ;
 }
 
 .blog-thumbnail img {
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 .blog-details .blog-anchor {
